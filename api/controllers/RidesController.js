@@ -6,8 +6,8 @@
  */
 let axios = require('axios');
 var validate = require('sails-hook-validation-ev/lib/validate');
-const TGS_apiKey = sails.config.TGS.apiKey;
-const TGS_url = sails.config.TGS.url;
+const TGS_apiKey = '8k5jqE35yN3yVUaxFP824FOq8oJeLyr3bVyiZmig';
+const TGS_url = 'https://staging.api.external.thegoodseat.fr/';
 
 module.exports = {
   search: async (req, res) => {

@@ -1,0 +1,19 @@
+<h3 class="display-4 text-center">Search Results</h3>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Provider Code</th>
+             <th>Price</th>
+            <th>Waiting Time</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% allOffers.forEach(function(offer){ %>
+            <tr>
+                <td><%= offer.providerCode %></td>
+                <td><span class="badge badge-info"><%= offer.price %> <%= offer.currency %></span></td>
+                <td><span class="badge badge-success"><%= offer.WaitingTime %> mn</span></td>
+            </tr>
+        <% }) %>
+    </tbody>
+</table>

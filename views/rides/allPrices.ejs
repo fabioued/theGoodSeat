@@ -1,0 +1,17 @@
+<h3 class="display-4 text-center">Price of Offers</h3>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Provider Code</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% offers.forEach(function(offer){ %>
+            <tr>
+                <td><%= offer.providerCode %></td>
+                <td><span class="badge badge-success"><%= offer.price %> <%= offer.currency %></span></td
+            </tr>
+        <% }) %>
+    </tbody>
+</table>

@@ -1,0 +1,19 @@
+<h3 class="display-4 text-center">Waiting Time of offers</h3>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Provider Code</th>
+            <th>Waiting Time</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% allWaitingTimes.forEach(function(time){ %>
+            <tr>
+                <td><%= time.providerCode %></td>
+                <td><span class="badge badge-success"><%= time.WaitingTime %> mn</span></td>
+                <td><%= time.price %> <%= time.currency %></td>
+            </tr>
+        <% }) %>
+    </tbody>
+</table>

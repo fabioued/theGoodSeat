@@ -21,4 +21,5 @@ module.exports.policies = {
 
   // Bypass the `is-logged-in` policy for:
   '/': true,
+  '/api/': true,
 };

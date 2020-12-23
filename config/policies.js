@@ -17,7 +17,10 @@ module.exports.policies = {
   *                                                                          *
   ***************************************************************************/
 
-  '*': 'is-logged-in',
+  // '*': 'is-logged-in',
+  'POST /rides/search': 'is-logged-in',
+  'POST /rides/price': 'is-logged-in',
+  'POST /rides/time': 'is-logged-in',
 
   // Bypass the `is-logged-in` policy for:
   '/': true,

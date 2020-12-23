@@ -16,24 +16,6 @@ module.exports = {
       type: 'string',
       required: true
     }
-
-  },
-
-  signup: function (inputs, cb) {
-    // Create a new user
-    // Users.create({
-    //   email: inputs.email,
-    //   firstname: inputs.firstname,
-    //   lastname: inputs.lastname,
-    //   birthDate: inputs.birthDate,
-    //   phoneNumber: inputs.phoneNumber,
-    //   isPhoneNumberVerified: inputs.isPhoneNumberVerified,
-    //   country: inputs.country,
-    // })
-
-  },
-
-
-
+  }
 };
 
